@@ -1,0 +1,3 @@
+timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpeed,windDirection,shortForecast
+2025-10-31 15:50:55,ILM,65,F,0,10 mph,W,Sunny
+2025-10-31 15:51:05,ILM,65,F,0,10 mph,W,Sunny
