@@ -5,8 +5,7 @@
 - Humidity
 - Wind speed
 - Atmospheric pressure
-The data should be generated for different global locations to simulate diversity in envi-
-ronmental conditions.
+The data should be generated for different global locations to simulate diversity in environmental conditions.
 
 2. **Data Collection and Logging:** Implement periodic data collection from all sensors and store the collected data in a log file. Each log entry must include:
 - Timestamp
@@ -14,8 +13,7 @@ ronmental conditions.
 - Sensor reading
 - Geographic location
 
-3. **Automated Responses:** Create automated responses that trigger actions when sensor data exceeds predefined thresholds (e.g., a warning when the temperature exceeds a
-specific value).
+3. **Automated Responses:** Create automated responses that trigger actions when sensor data exceeds predefined thresholds (e.g., a warning when the temperature exceeds a specific value).
 
 4. **Data Retrieval:** Implement a mechanism to retrieve historical data based on criteria such as:
 - Date range
