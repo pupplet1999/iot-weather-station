@@ -7,10 +7,10 @@
 #include<iomanip>
 #include<sys/stat.h>//for file status check
 
-
-
 using namespace std;//bc im lazy
-using json = nlohmann::json; // make sure jspon
+using json = nlohmann::json; // make sure json
+
+
 
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) { //this is the callback function, it gets the size of the request from the API, we need size_t for 64 bit integer sizes incase the download is huge
     size_t totalSize = size * nmemb; // size of the total download
@@ -24,58 +24,6 @@ bool fileExists(string& filename) {//function to check if a file exists or not
     struct stat buffer; //stat recieves information about the file
     return (stat(filename.c_str(), &buffer) == 0); //it needs to return a 0 which means it exists otherwise it will return -1 and that is FALSE
 }
-
-
-
-void logCurrentForecast(string response, string location){//takes the api response for the supplied
-
-    json forecastData = json::parse(response); //parses the json that is returned 
-    
-    auto periods = forecastData["properties"]["periods"];
-    auto current = periods[0]; //grabs the first element (the current forecast)
-
-    //pulling all the data into variables 
-    int temperature = current["temperature"];
-    string temperatureUnit = current["temperatureUnit"];
-    int precipitationProbability = current["probabilityOfPrecipitation"]["value"];//nested list
-    string windSpeed = current["windSpeed"];
-    string windDirection = current["windDirection"];
-    string shortForecast = current["shortForecast"];
-
-    //setup for the timestamp in CSV
-    time_t now = time(0); //returns number of seconds since Unix epoch lol, so goofy, learned something new
-    tm *ltm = localtime(&now); //localtime() converts now into a struct with fields to fill out
-    char timestamp[20]; //array of characters for the timestamp that needs to be converted to a nice string
-    strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", ltm);// makes a nice and neat string
-    
-    string filename = "weather_log.csv";//file name
-    bool isNewFile = !fileExists(filename);//makes us a bool for if the log exists
-
-    //time to append everything into the CSV
-    ofstream csvFile("weather_log.csv", ios::app);//opens and appends
-
-    
-
-    
-
-    if (isNewFile){//checking if the file is new and needs a header
-        csvFile << "timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpeed,windDirection,shortForecast\n";// appending a header row to the CSV
-    }
-
-    csvFile << timestamp << "," // appends the data we want
-            << location << ","
-            << temperature << ","
-            << temperatureUnit << ","
-            << precipitationProbability << ","
-            << windSpeed << ","
-            << windDirection << ","
-            << shortForecast << "\n";
-    csvFile.close();//closes the file
-
-
-}
-
-
 
 string APIrequest (string url) { //function for api calls, we can change the url
 
@@ -116,20 +64,106 @@ string APIrequest (string url) { //function for api calls, we can change the url
     curl_global_cleanup();
     return readBuffer; //returns the data as a string
 
-    }   
+}  
 
+
+struct WeatherData { //struct to store and move the data more easily, (dont have to pass like eight variables)
+    string timestamp;
+    string location;
+    int temperature;
+    string temperatureUnit;
+    int precipitationProbability;
+    string windSpeed;
+    string windDirection;
+    string shortForecast;
+
+};
+
+class WeatherStation { //weather station class
+private:
+    string location;//these can be private, these arent going to change
+    string url;
+
+public:
+    string response; //
+
+    WeatherStation(string location, string url){//constructor for each location object that we will make for different places
+        this->location = location;
+        this->url = url;
+    }
+
+    WeatherData fetchCurrentForecast(){//method that returns the data into a struct called weatherdata, we can move this package around easier instead of like 7 variables
+        //api call and response
+        string response = APIrequest(url);
+        //parse the json
+        json forecastData = json::parse(response); //parses the json that is returned 
+        //pulls the correct section, which is the first forecast
+        auto periods = forecastData["properties"]["periods"];
+        auto current = periods[0]; //grabs the first element (the current forecast)
+
+        //all the timestamp crap, quite annoying and i dont really understand how this works too well tbh
+        time_t now = time(0);
+        tm* ltm = localtime(&now);
+        char timestamp[20];
+        strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", ltm);
+
+        WeatherData data;//making the data struct and storing it
+        data.timestamp = timestamp;
+        data.location = location;
+        data.temperature = current["temperature"];
+        data.temperatureUnit = current["temperatureUnit"];
+        data.precipitationProbability = current["probabilityOfPrecipitation"]["value"];
+        data.windSpeed = current["windSpeed"];
+        data.windDirection = current["windDirection"];
+        data.shortForecast = current["shortForecast"];
+
+        return data; //returns this struct with all the data stored properly into the struct
+    }
+
+    void logCurrentForecast(WeatherData& data){// function takes the api response for the supplied response and a location name
+        
+        string filename = "weather_log.csv";//file name
+        bool isNewFile = !fileExists(filename);//makes us a bool for if the log exists
+
+        //time to append everything into the CSV
+        ofstream csvFile("weather_log.csv", ios::app);//opens and appends
+
+
+        if (isNewFile){//checking if the file is new and needs a header
+            csvFile << "timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpeed,windDirection,shortForecast\n";// appending a header row to the CSV
+        }
+
+        csvFile << data.timestamp << "," // appends the data we want
+                << data.location << ","
+                << data.temperature << ","
+                << data.temperatureUnit << ","
+                << data.precipitationProbability << ","
+                << data.windSpeed << ","
+                << data.windDirection << ","
+                << data.shortForecast << "\n";
+        csvFile.close();//closes the file
+
+
+    }
+};
 
 int main (){//main
-    string url = "https://api.weather.gov/gridpoints/ILM/92,68/forecast";
 
-    string response = APIrequest(url); //turns the api response into a string
+    //weather station objects
+    WeatherStation ILM("Wilmington", "https://api.weather.gov/gridpoints/ILM/92,68/forecast");
+    WeatherStation RDU("Raleigh", "https://api.weather.gov/gridpoints/RAH/74,57/forecast");
+    WeatherStation CLT("Charlotte", "https://api.weather.gov/gridpoints/GSP/119,65/forecast");
 
-    string location = "ILM";
+    
+    //making the weather data structs for each station then logging the data for each
+    WeatherData data1 = ILM.fetchCurrentForecast();
+    ILM.logCurrentForecast(data1);
 
-    logCurrentForecast(response, location); //this takes hte api request and just a location then 
+    WeatherData data2 = RDU.fetchCurrentForecast();
+    RDU.logCurrentForecast(data2);
 
-
-
+    WeatherData data3 = CLT.fetchCurrentForecast();
+    CLT.logCurrentForecast(data3);
 
     return 0;
 }

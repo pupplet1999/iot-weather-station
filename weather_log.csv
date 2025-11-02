@@ -1,3 +1,4 @@
 timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpeed,windDirection,shortForecast
-2025-10-31 15:50:55,ILM,65,F,0,10 mph,W,Sunny
-2025-10-31 15:51:05,ILM,65,F,0,10 mph,W,Sunny
+2025-11-02 10:35:30,Wilmington,67,F,29,9 mph,NE,Partly Sunny then Chance Light Rain
+2025-11-02 10:35:31,Raleigh,65,F,15,2 to 6 mph,E,Mostly Sunny then Slight Chance Light Rain
+2025-11-02 10:35:31,Charlotte,40,F,0,2 mph,NE,Partly Cloudy
