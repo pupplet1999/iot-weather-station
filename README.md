@@ -37,6 +37,19 @@ The data should be generated for different global locations to simulate diversit
 - Comparing data across different locations
 
 
+## To-Do
+
+- [x] Pull sensor data from API 
+- [x] Organize data and store it
+- [ ] Data retrieval from CSV based on criteria
+- [ ] UML Diagram
+- [ ] Data analysis (report averages, anomolies, compare data between locations, etc)
+- [ ] Generate automated responses to data (warnings for high or low temperatures)
+
+I am sure there is more to add to this list. Feel free to change or updated it!
+
+
+
 
 ## Deliverables
 
@@ -52,3 +65,4 @@ The data should be generated for different global locations to simulate diversit
 - Key features
 - Design approach and UML diagram
 - Challenges faced and solutions implemented
+
