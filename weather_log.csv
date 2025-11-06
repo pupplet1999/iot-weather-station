@@ -2,3 +2,6 @@ timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpee
 2025-11-02 10:35:30,Wilmington,67,F,29,9 mph,NE,Partly Sunny then Chance Light Rain
 2025-11-02 10:35:31,Raleigh,65,F,15,2 to 6 mph,E,Mostly Sunny then Slight Chance Light Rain
 2025-11-02 10:35:31,Charlotte,40,F,0,2 mph,NE,Partly Cloudy
+2025-11-06 13:36:59,Wilmington,68,F,0,6 to 9 mph,NE,Sunny
+2025-11-06 13:37:00,Raleigh,66,F,0,3 to 7 mph,NE,Sunny
+2025-11-06 13:37:00,Charlotte,68,F,0,5 to 9 mph,NE,Sunny
