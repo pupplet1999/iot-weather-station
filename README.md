@@ -4,8 +4,10 @@
 To make this work while you are working on this code you might need to install two things on your computer:
 1. curl
 - for fetching data from the NWS api
+  `sudo apt install libcurl4-openssl-dev`
 2. nlohmann-json3-dev
 - for us to parse the json files that are pullsed from the NWS (makes it usable)
+  `sudo apt install nlohmann-json3-dev`
 
 
 
