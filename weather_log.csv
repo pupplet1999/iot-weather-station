@@ -8,3 +8,6 @@ timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpee
 2025-11-06 14:09:09,Wilmington,68,F,0,6 to 9 mph,NE,Sunny
 2025-11-06 14:09:10,Raleigh,66,F,0,6 mph,NE,Sunny
 2025-11-06 14:09:10,Charlotte,68,F,0,5 to 9 mph,NE,Sunny
+2025-11-07 10:03:29,Wilmington,73,F,14,8 mph,SE,Mostly Sunny
+2025-11-07 10:03:29,Raleigh,70,F,7,6 to 9 mph,S,Mostly Sunny
+2025-11-07 10:03:29,Charlotte,69,F,0,2 to 8 mph,SSE,Mostly Sunny

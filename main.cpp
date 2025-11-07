@@ -15,13 +15,6 @@ int main (){
 
     WeatherData data3 = CLT.fetchCurrentForecast();
     CLT.logCurrentForecast(data3);
-
-    ifstream csvFile;
-    string line = "";
-    csvFile.open("weather_log.csv");
-    getline(csvFile, line);
-    cout << line << endl;
-    csvFile.close();
-
+    
     return 0;
 }
