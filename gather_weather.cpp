@@ -3,6 +3,8 @@
 #include <sstream>
 #include <string>
 #include <map>
+#include <algorithm>
+#include <cctype>
 using namespace std;
 
 // FIXME make sure date is in format mm/dd/yyyy, currently in mm/d/yyyy
@@ -25,7 +27,8 @@ private:
            temp_unit,
            wind_spd,
            wind_dir,
-           fc;
+           fc,
+           usr_input;
 
     void createTimeMap(string csv_name){ // gather all timestamps and store their line in a map
         csvFile.open(csv_name);  
@@ -173,19 +176,60 @@ public:
              << "Wind Speed:     " << get_wind_spd(map_key) << '\n'
              << "Wind Direction: " << get_wind_dir(map_key) << '\n'
              << "Short Forecast: " << get_fc(map_key) << "\n\n";
-            }
+    }
 
+    string chooseLocation(string chosen_loc){
+        transform(chosen_loc.begin(), chosen_loc.end(), chosen_loc.begin(),
+        [](unsigned char c){ return tolower(c); }); // converts to lowercase: makes input capitalization not matter
+
+        if (chosen_loc == "1" || chosen_loc == "charlotte"){
+            usr_input += "Charlotte";
+            return "Charlotte";
+        } else if (chosen_loc == "2" || chosen_loc == "raleigh"){
+            usr_input += "Raleigh";
+            return "Raleigh";
+        } else if (chosen_loc == "3" || chosen_loc == "wilmington"){
+            usr_input += "Wilmington";
+            return "Wilmington";
+        }
+        return 0;
+    }
+
+    void chooseDate(string chosen_date){
+        // any necessary conversions to chosen_date can go here
+        usr_input += ',' + chosen_date;
+
+    }
+
+    void chooseTime(string chosen_time){
+        // any necessary conversions to chosen_time can go here
+        usr_input += ',' + chosen_time;
+        cout << "key: " << usr_input << endl;
+    }
+            
     ~CSV(){
         csvFile.close();
     }
 };
 
 int main(){ // FIXME currently throws an error if user entered incorrectly formatted key
-    string key;
+    string chosen_loc,
+           location,
+           chosen_date,
+           chosen_time;
     CSV weatherCSV("weather_log.csv");
 
     cout << "^^^ Temporary database above for reference of how key should be entered ^^^" << "\n";
-    cout << "Enter Date, Time (24h), and Location (<mm-dd-yyyy> <hh:mm:ss> <location>):" << "\n";
-    getline(cin, key);
-    weatherCSV.display_info(key);
+
+    cout << "Choose a location: \n[1] Charlotte\n[2] Raleigh\n[3] Wilmington" << "\n";
+    getline(cin, chosen_loc);
+    location = weatherCSV.chooseLocation(chosen_loc); // gather user's desired location, update key with such location
+
+    cout << "Enter date for " << location << " (yyyy-mm-dd):" << "\n";
+    getline(cin, chosen_date);
+    weatherCSV.chooseDate(chosen_date);
+
+    cout << "Enter time for " << location << " on " << chosen_date <<  " (hh-mm, 24h):" << "\n";
+    getline(cin, chosen_time);
+    weatherCSV.chooseTime(chosen_time);
 }
