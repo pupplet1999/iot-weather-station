@@ -240,7 +240,7 @@ public:
         return usr_input;
     }
 };
-
+/* commenting all this out until i get it to work!
 int main() { 
     WeatherDataCSV weatherCSV("weather_log.csv");
     DisplayWeatherCSV display(weatherCSV);
@@ -292,5 +292,5 @@ int main() {
         cont_check = inputHandler.should_continue();
     }
 }
-
+*/
 #endif //end lol
