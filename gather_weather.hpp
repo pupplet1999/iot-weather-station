@@ -42,7 +42,6 @@ public:
     }  
 };
 
-
 struct WeatherRecord {
     string date;
     string hour;
@@ -59,6 +58,7 @@ struct WeatherRecord {
 class WeatherDataCSV : public CSVFile{
 private:
     map<string, int> lineMap; // <location> <yyyy-mm-dd> <hh:mm> -> respective line number
+    string anomalie;
 
     void createTimeMap(string csv_name){ // gather location+timestamp and store their respective line in a map
         string line;
@@ -97,11 +97,18 @@ public:
     // constructor takes name of CSV file, opens CSV file, creates map
     WeatherDataCSV(const string& filename) : CSVFile(filename) { 
         createTimeMap(csv_name); // create timestamp map
+        // ==========REMOVE==========
         cout << "\nDEBUG: Dumping map:\n";
         for (const auto& p : lineMap) {
+            if (p.second == 1) {continue;}
             cout << p.first << " -> " << p.second << "\n";
             }
         cout << "END MAP\n\n";
+        // ==========================
+    }
+
+    string getanomalie() { 
+        return anomalie;
     }
 
     WeatherRecord gatherLineData(int line_num) { // gather data of a certain line
@@ -120,8 +127,13 @@ public:
         // gather location
         record.location = extractField(line);
 
-        // gather nominal temperature
+        // gather nominal temperature, check if anomalous
         record.temp = stoi(extractField(line));
+        if (record.temp <= 32) { 
+            anomalie = "low";
+        } else if (record.temp >= 90) {
+            anomalie = "high";
+        }
 
         // gather temperature unit (F or C)
         record.temp_unit = extractField(line);
@@ -154,14 +166,23 @@ public:
 
     void display_info(const string& map_key) {
         WeatherRecord record = data.gatherLineData(data.get_map().at(map_key));
-        cout << "Date:           " << record.date << '\n'
+        cout << "\n==========================\n"
+             << "Date:           " << record.date << '\n'
              << "Hour:           " << record.hour << '\n'
              << "Location:       " << record.location << '\n'
              << "Temperature:    " << record.temp << " " << record.temp_unit << '\n'
              << "Precipitation:  " << record.precip << '%' << '\n'
              << "Wind Speed:     " << record.wind_spd << '\n'
              << "Wind Direction: " << record.wind_dir << '\n'
-             << "Short Forecast: " << record.fc << "\n";
+             << "Short Forecast: " << record.fc << '\n';
+        if (data.getanomalie() == "low") {
+            cout << "\n[WARNING]\nFREEZING TEMPERATURE\n";
+            cout << "==========================\n\n";
+        } else if (data.getanomalie() == "high") {
+            cout << "\n[WARNING]\nDANGEROUSLY HIGH TEMPERATURE\n";
+            cout << "==========================\n\n";
+        }
+        return;
     }
 };
 
@@ -184,11 +205,13 @@ public:
         } else if (chosen_loc == "3" || chosen_loc == "wilmington") {
             usr_input += "Wilmington";
             return "Wilmington";
+        } else if (chosen_loc == "4") {
+            return "quit";
         }
         return "";
     }
 
-    bool chooseDate(string chosen_date) {
+    bool chooseDate(string& chosen_date) {
         if (chosen_date.length() != 10){ // check length
             return false;
         }
@@ -217,8 +240,18 @@ public:
         return true;
     }
 
-    void chooseTime(string chosen_time) {
-        usr_input += ' ' + chosen_time;
+    bool chooseTime(string chosen_time) {
+        int int_time;
+        // try to convert to int, return false if not
+        try { 
+            int_time = stoi(chosen_time);
+        } catch (...) {
+            return false;
+        }
+        if (!(int_time >= 0 && int_time <= 24)) return false; // check if valid range
+
+        usr_input += ' ' + chosen_time; // update key
+        return true;
     }
     
     bool should_continue() {
