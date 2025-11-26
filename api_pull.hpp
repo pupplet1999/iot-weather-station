@@ -67,7 +67,7 @@ string APIrequest (string url) { //function for api calls, we can change the url
 
 }  
 
-struct WeatherData { //struct to store and move the data more easily, (dont have to pass like eight variables)
+struct weatherRecord { //struct to store and move the data more easily, (dont have to pass like eight variables)
     string timestamp;
     string location;
     int temperature;
@@ -92,7 +92,7 @@ public:
         this->url = url;
     }
 
-    WeatherData fetchCurrentForecast(){//method that returns the data into a struct called weatherdata, we can move this package around easier instead of like 7 variables
+    weatherRecord fetchCurrentForecast(){//method that returns the data into a struct called weatherRecord, we can move this package around easier instead of like 7 variables
         //api call and response
         string response = APIrequest(url);
         //parse the json
@@ -107,7 +107,7 @@ public:
         char timestamp[20];
         strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", ltm);
 
-        WeatherData data;//making the data struct and storing it
+        weatherRecord data;//making the data struct and storing it
         data.timestamp = timestamp;
         data.location = location;
         data.temperature = current["temperature"];
@@ -120,7 +120,7 @@ public:
         return data; //returns this struct with all the data stored properly into the struct
     }
 
-    void logCurrentForecast(WeatherData& data){// function takes the api response for the supplied response and a location name
+    void logCurrentForecast(weatherRecord& data){// function takes the api response for the supplied response and a location name
         
         string filename = "weather_log.csv";//file name
         bool isNewFile = !fileExists(filename);//makes us a bool for if the log exists
