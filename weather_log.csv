@@ -17,112 +17,484 @@ timestamp,location,temperature,temperatureUnit,precipitationProbability,windSpee
 2025-11-10 12:29:00,Wilmington,56,F,0,13 mph,NW,Sunny
 2025-11-10 12:29:00,Raleigh,52,F,0,9 to 13 mph,NW,Sunny
 2025-11-10 12:29:00,Charlotte,46,F,0,8 to 16 mph,NW,Sunny
+2025-11-10 12:34:00,Wilmington,56,F,0,13 mph,NW,Sunny
+2025-11-10 12:34:00,Raleigh,52,F,0,9 to 13 mph,NW,Sunny
+2025-11-10 12:34:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
 2025-11-10 13:28:00,Wilmington,56,F,0,12 mph,NW,Sunny
 2025-11-10 13:28:00,Raleigh,51,F,0,12 mph,NW,Sunny
 2025-11-10 13:28:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
-2025-11-11 12:24:18,Wilmington,47,F,0,9 to 14 mph,W,Sunny
-2025-11-11 12:22:00,Raleigh,48,F,0,10 to 14 mph,W,Sunny
-2025-11-11 12:22:00,Charlotte,28,F,0,10 mph,WNW,Clear
-2025-11-25 17:22:03,Wilmington,73,F,26,7 mph,S,Chance Light Rain
-2025-11-25 17:22:03,Raleigh,72,F,14,8 mph,S,Mostly Cloudy
-2025-11-25 17:22:03,Charlotte,70,F,30,8 mph,S,Chance Rain Showers
-2025-11-26 12:11:22,Wilmington,77,F,8,13 mph,SW,Mostly Sunny
-2025-11-26 12:11:25,Raleigh,75,F,1,10 mph,SW,Mostly Sunny
-2025-11-26 12:11:25,Charlotte,57,F,28,10 mph,SW,Chance Rain Showers
-2025-11-26 12:12:03,Wilmington,77,F,8,13 mph,SW,Mostly Sunny
-2025-11-26 12:12:03,Raleigh,75,F,1,10 mph,SW,Mostly Sunny
-2025-11-26 12:12:03,Charlotte,57,F,28,10 mph,SW,Chance Rain Showers
-2025-11-26 12:13:42,Wilmington,77,F,8,13 mph,SW,Mostly Sunny
-2025-11-26 12:13:42,Raleigh,75,F,1,10 mph,SW,Mostly Sunny
-2025-11-26 12:13:43,Charlotte,73,F,1,13 mph,WSW,Sunny
-2025-11-26 12:18:58,Wilmington,77,F,8,13 mph,SW,Mostly Sunny
-2025-11-26 12:18:58,Raleigh,75,F,1,10 mph,SW,Mostly Sunny
-2025-11-26 12:18:58,Charlotte,73,F,1,13 mph,WSW,Sunny
-
-2025-11-26 13:07:43,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:07:43,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:07:43,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:08:13,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:08:13,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:08:13,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:11:51,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:11:51,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:11:52,Charlotte,73,F,1,14 mph,WSW,Sunny
-2025-11-26 13:14:20,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:14:21,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:14:21,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:15:09,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:15:09,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:15:09,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:17:52,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:17:52,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:17:52,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:18:34,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:18:34,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:18:35,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:19:14,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:19:14,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:19:14,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:19:34,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:19:34,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:19:35,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:25:59,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:25:59,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:25:59,Charlotte,73,F,0,14 mph,WSW,Sunny
-2025-11-26 13:30:22,Wilmington,76,F,12,9 to 13 mph,SW,Mostly Sunny
-2025-11-26 13:30:22,Raleigh,75,F,0,7 to 15 mph,W,Mostly Sunny
-2025-11-26 13:30:22,Charlotte,73,F,0,14 mph,WSW,Sunny
+2025-11-10 13:29:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:29:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:29:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 13:30:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:30:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:30:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 13:31:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:31:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:31:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 13:32:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:32:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:32:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 13:33:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:33:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:33:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 13:34:00,Wilmington,56,F,0,12 mph,NW,Sunny
+2025-11-10 13:34:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 13:34:00,Charlotte,46,F,4,12 to 15 mph,WNW,Mostly Sunny
+2025-11-10 16:23:00,Wilmington,56,F,0,14 mph,W,Sunny
+2025-11-10 16:23:00,Raleigh,51,F,0,12 mph,NW,Sunny
+2025-11-10 16:23:00,Charlotte,46,F,4,15 mph,WNW,Partly Sunny
+2025-11-10 16:26:00,Wilmington,56,F,0,14 mph,W,Sunny
+2025-11-10 16:26:00,Raleigh,51,F,0,12 mph,W,Sunny
+2025-11-10 16:26:00,Charlotte,46,F,4,15 mph,WNW,Partly Sunny
+2025-11-10 16:29:00,Wilmington,56,F,0,14 mph,W,Sunny
+2025-11-10 16:29:00,Raleigh,51,F,0,12 mph,W,Sunny
+2025-11-10 16:29:00,Charlotte,46,F,4,15 mph,WNW,Partly Sunny
+2025-11-10 17:03:00,Wilmington,56,F,0,12 mph,W,Sunny
+2025-11-10 17:03:00,Raleigh,51,F,0,12 mph,W,Sunny
+2025-11-10 17:03:00,Charlotte,46,F,4,15 mph,WNW,Partly Sunny
+2025-11-10 18:32:00,Wilmington,56,F,0,12 mph,W,Sunny
+2025-11-10 18:32:00,Raleigh,28,F,27,13 mph,W,Partly Cloudy then Chance Snow Showers
+2025-11-10 18:32:00,Charlotte,46,F,4,15 mph,WNW,Mostly Cloudy
+2025-11-10 21:46:00,Wilmington,32,F,21,10 to 15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 21:46:00,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 21:46:00,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-10 21:55:30,Wilmington,32,F,21,10 to 15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 21:55:30,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 21:55:30,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-10 21:58:36,Wilmington,32,F,21,10 to 15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 21:58:36,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 21:58:37,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-10 21:59:00,Wilmington,32,F,21,10 to 15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 21:59:00,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 21:59:01,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-10 22:00:01,Wilmington,32,F,21,10 to 15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 22:00:01,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 22:00:02,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-10 23:00:02,Wilmington,32,F,21,15 mph,W,Slight Chance Rain And Snow Showers
+2025-11-10 23:00:02,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-10 23:00:02,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-11 00:00:01,Wilmington,31,F,28,15 mph,W,Chance Rain And Snow Showers
+2025-11-11 00:00:02,Raleigh,28,F,27,13 mph,NW,Partly Cloudy then Chance Snow Showers
+2025-11-11 00:00:02,Charlotte,27,F,15,10 to 14 mph,WNW,Chance Snow Showers
+2025-11-11 01:00:01,Wilmington,31,F,3,15 mph,W,Partly Cloudy
+2025-11-11 01:00:09,Raleigh,28,F,27,12 mph,NW,Chance Snow Showers
+2025-11-11 01:00:10,Charlotte,28,F,9,13 mph,WNW,Mostly Clear
+2025-11-11 02:00:01,Wilmington,31,F,3,15 mph,W,Partly Cloudy
+2025-11-11 02:00:02,Raleigh,28,F,27,12 mph,NW,Chance Snow Showers
+2025-11-11 02:00:02,Charlotte,28,F,4,12 mph,WNW,Clear
+2025-11-11 03:00:01,Wilmington,31,F,3,15 mph,W,Partly Cloudy
+2025-11-11 03:00:02,Raleigh,28,F,27,12 mph,NW,Chance Snow Showers
+2025-11-11 03:00:02,Charlotte,28,F,4,12 mph,WNW,Clear
+2025-11-11 04:00:02,Wilmington,31,F,3,15 mph,W,Partly Cloudy
+2025-11-11 04:00:02,Raleigh,29,F,1,12 mph,NW,Mostly Clear
+2025-11-11 04:00:02,Charlotte,28,F,4,12 mph,WNW,Clear
+2025-11-11 05:00:02,Wilmington,31,F,3,15 mph,W,Partly Cloudy
+2025-11-11 05:00:02,Raleigh,29,F,1,12 mph,NW,Mostly Clear
+2025-11-11 05:00:02,Charlotte,28,F,4,12 mph,WNW,Clear
+2025-11-11 06:00:02,Wilmington,49,F,0,10 to 15 mph,W,Sunny
+2025-11-11 06:00:02,Raleigh,29,F,1,12 mph,NW,Mostly Clear
+2025-11-11 06:00:02,Charlotte,28,F,0,10 mph,WNW,Clear
+2025-11-11 07:00:09,Wilmington,49,F,0,10 to 15 mph,W,Sunny
+2025-11-11 07:00:09,Raleigh,29,F,1,12 mph,NW,Mostly Clear
+2025-11-11 07:00:09,Charlotte,28,F,0,10 mph,WNW,Clear
+2025-11-11 08:00:08,Wilmington,49,F,0,10 to 15 mph,W,Sunny
+2025-11-11 08:00:15,Raleigh,48,F,0,10 to 14 mph,W,Sunny
+2025-11-11 08:00:16,Charlotte,28,F,0,10 mph,WNW,Clear
+2025-11-11 09:00:14,Wilmington,49,F,0,10 to 15 mph,W,Sunny
+2025-11-11 09:00:16,Raleigh,48,F,0,10 to 14 mph,W,Sunny
+2025-11-11 09:00:17,Charlotte,46,F,1,8 to 13 mph,WSW,Sunny
+2025-11-11 10:00:02,Wilmington,49,F,0,10 to 15 mph,W,Sunny
+2025-11-11 10:00:02,Raleigh,48,F,0,9 to 14 mph,W,Sunny
+"2025-11-11 10:00:02",Charlotte,28,F,0,10 mph,WNW,Clear
+2025-11-11 18:20:41,Wilmington,35,F,0,5 to 9 mph,W,Clear
+2025-11-11 18:20:42,Raleigh,32,F,1,8 mph,SW,Mostly Clear
+2025-11-11 18:20:42,Charlotte,47,F,0,13 mph,WSW,Sunny
+2025-11-11 19:16:51,Wilmington,35,F,0,5 to 9 mph,W,Clear
+2025-11-11 19:16:51,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-11 19:16:51,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-11 20:00:03,Wilmington,35,F,0,5 to 9 mph,W,Clear
+2025-11-11 20:00:08,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-11 20:00:08,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-11 21:00:08,Wilmington,35,F,0,5 to 9 mph,W,Clear
+2025-11-11 21:00:08,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-11 21:00:10,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-11 22:00:13,Wilmington,35,F,0,5 to 9 mph,SW,Clear
+2025-11-11 22:00:15,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-11 22:00:15,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-11 23:00:05,Wilmington,35,F,0,6 to 9 mph,SW,Clear
+2025-11-11 23:00:06,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-11 23:00:10,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-12 00:00:19,Wilmington,35,F,0,6 to 9 mph,SW,Clear
+2025-11-12 00:00:20,Raleigh,32,F,1,9 mph,SW,Mostly Clear
+2025-11-12 00:00:20,Charlotte,36,F,1,6 to 14 mph,SW,Mostly Clear
+2025-11-12 01:00:07,Wilmington,37,F,0,8 mph,SW,Clear
+2025-11-12 01:00:12,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 01:00:12,Charlotte,36,F,0,13 mph,SW,Clear
+2025-11-12 02:00:01,Wilmington,37,F,0,8 mph,SW,Clear
+2025-11-12 02:00:05,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 02:00:05,Charlotte,36,F,0,13 mph,SW,Clear
+2025-11-12 03:00:11,Wilmington,37,F,0,8 mph,SW,Clear
+2025-11-12 03:00:12,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 03:00:12,Charlotte,36,F,0,13 mph,SW,Clear
+2025-11-12 04:00:01,Wilmington,37,F,0,8 mph,SW,Clear
+2025-11-12 04:00:02,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 04:00:02,Charlotte,36,F,0,13 mph,SW,Clear
+2025-11-12 05:00:10,Wilmington,38,F,0,10 mph,W,Clear
+2025-11-12 05:00:10,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 05:00:10,Charlotte,36,F,0,13 mph,SW,Clear
+2025-11-12 06:00:01,Wilmington,62,F,0,10 to 14 mph,SW,Sunny
+2025-11-12 06:00:10,Raleigh,32,F,0,9 mph,SW,Mostly Clear
+2025-11-12 06:00:10,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 07:00:01,Wilmington,62,F,0,10 to 14 mph,SW,Sunny
+2025-11-12 07:00:01,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 07:00:01,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 08:00:06,Wilmington,62,F,0,10 to 14 mph,SW,Sunny
+2025-11-12 08:00:22,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 08:00:22,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 09:00:03,Wilmington,62,F,0,10 to 14 mph,W,Sunny
+2025-11-12 09:00:03,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 09:00:03,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 10:00:00,Wilmington,62,F,0,10 to 14 mph,SW,Sunny
+2025-11-12 10:00:02,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 10:00:02,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 11:00:04,Wilmington,62,F,0,10 to 14 mph,W,Sunny
+2025-11-12 11:00:04,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 11:00:04,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 12:00:02,Wilmington,62,F,0,10 to 14 mph,W,Sunny
+2025-11-12 12:00:02,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 12:00:02,Charlotte,37,F,0,13 mph,SW,Clear
+2025-11-12 13:00:10,Wilmington,61,F,0,12 mph,W,Sunny
+2025-11-12 13:00:17,Raleigh,62,F,0,8 to 14 mph,SW,Sunny
+2025-11-12 13:00:17,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 14:00:02,Wilmington,61,F,0,12 mph,W,Sunny
+2025-11-12 14:00:06,Raleigh,61,F,0,10 mph,SW,Sunny
+2025-11-12 14:00:06,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 15:00:04,Wilmington,61,F,0,10 mph,W,Sunny
+2025-11-12 15:00:05,Raleigh,61,F,0,10 mph,SW,Sunny
+2025-11-12 15:00:05,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 16:00:04,Wilmington,61,F,0,12 mph,W,Sunny
+2025-11-12 16:00:06,Raleigh,61,F,0,9 mph,SW,Sunny
+2025-11-12 16:00:06,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 17:00:02,Wilmington,61,F,0,12 mph,W,Sunny
+2025-11-12 17:00:04,Raleigh,63,F,0,9 mph,SW,Sunny
+2025-11-12 17:00:04,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 18:00:09,Wilmington,43,F,0,8 mph,W,Clear
+2025-11-12 18:00:11,Raleigh,43,F,0,5 to 8 mph,W,Mostly Clear
+2025-11-12 18:00:11,Charlotte,62,F,0,10 mph,WSW,Sunny
+2025-11-12 19:00:08,Wilmington,43,F,0,7 mph,W,Clear
+2025-11-12 19:00:19,Raleigh,43,F,0,7 mph,W,Mostly Clear
+2025-11-12 19:00:19,Charlotte,40,F,0,3 to 8 mph,W,Clear
+2025-11-12 20:00:04,Wilmington,43,F,0,7 mph,W,Clear
+2025-11-12 20:00:04,Raleigh,43,F,0,6 mph,W,Mostly Clear
+2025-11-12 20:00:05,Charlotte,40,F,0,3 to 8 mph,W,Clear
+2025-11-12 21:00:17,Wilmington,43,F,0,6 mph,W,Clear
+2025-11-12 21:00:17,Raleigh,43,F,0,6 mph,W,Mostly Clear
+2025-11-12 21:00:17,Charlotte,40,F,0,3 to 8 mph,W,Clear
+2025-11-12 22:00:01,Wilmington,43,F,0,6 mph,W,Clear
+2025-11-12 22:00:06,Raleigh,43,F,0,6 mph,W,Mostly Clear
+2025-11-12 22:00:06,Charlotte,40,F,0,6 mph,W,Clear
+2025-11-15 13:06:18,Wilmington,71,F,0,10 mph,SW,Partly Sunny
+2025-11-15 13:06:27,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 13:06:29,Charlotte,73,F,0,9 to 13 mph,SW,Partly Sunny
+2025-11-15 14:00:02,Wilmington,71,F,0,10 mph,SW,Partly Sunny
+2025-11-15 14:00:13,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 14:00:13,Charlotte,73,F,0,9 to 13 mph,SW,Partly Sunny
+2025-11-15 15:00:25,Wilmington,71,F,0,10 mph,SW,Partly Sunny
+2025-11-15 15:00:27,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 15:00:27,Charlotte,73,F,0,9 to 13 mph,SW,Partly Sunny
+2025-11-15 16:00:01,Wilmington,71,F,0,10 mph,SW,Partly Sunny
+2025-11-15 16:00:10,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 16:00:10,Charlotte,73,F,0,9 to 13 mph,SW,Partly Sunny
+2025-11-15 17:00:06,Wilmington,73,F,0,9 mph,SW,Partly Sunny
+2025-11-15 17:00:11,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 17:00:11,Charlotte,73,F,0,9 to 13 mph,SW,Partly Sunny
+2025-11-15 18:00:03,Wilmington,58,F,1,8 to 12 mph,SW,Partly Cloudy
+2025-11-15 18:00:03,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 18:00:03,Charlotte,73,F,0,13 mph,SW,Mostly Sunny
+2025-11-15 19:00:07,Wilmington,58,F,0,7 to 12 mph,SW,Partly Cloudy
+2025-11-15 19:00:19,Raleigh,73,F,0,9 mph,SW,Mostly Cloudy
+2025-11-15 19:00:19,Charlotte,73,F,0,13 mph,SW,Mostly Sunny
+2025-11-16 04:00:01,Wilmington,59,F,0,12 mph,SW,Mostly Clear
+2025-11-16 04:00:07,Raleigh,59,F,2,10 mph,SW,Mostly Cloudy
+2025-11-16 04:00:07,Charlotte,58,F,0,15 mph,SW,Mostly Clear
+2025-11-16 05:00:10,Wilmington,59,F,0,12 mph,SW,Mostly Clear
+2025-11-16 05:00:27,Raleigh,59,F,2,10 mph,SW,Mostly Cloudy
+2025-11-16 05:00:27,Charlotte,58,F,0,14 mph,SW,Mostly Clear
+2025-11-16 06:00:11,Wilmington,79,F,0,12 to 15 mph,W,Sunny
+2025-11-16 06:00:13,Raleigh,59,F,2,10 mph,SW,Mostly Cloudy
+2025-11-16 06:00:13,Charlotte,58,F,0,14 mph,SW,Mostly Clear
+2025-11-16 14:00:14,Wilmington,76,F,0,12 mph,W,Sunny
+2025-11-16 14:00:15,Raleigh,75,F,0,10 to 17 mph,NW,Sunny
+2025-11-16 14:00:15,Charlotte,76,F,0,13 to 16 mph,WNW,Sunny
+2025-11-16 15:00:02,Wilmington,76,F,0,12 mph,W,Sunny
+2025-11-16 15:00:06,Raleigh,75,F,0,10 to 16 mph,NW,Sunny
+2025-11-16 15:00:06,Charlotte,76,F,0,13 to 16 mph,WNW,Sunny
+2025-11-16 16:00:01,Wilmington,76,F,0,10 mph,NW,Sunny
+2025-11-16 16:00:02,Raleigh,75,F,0,10 to 16 mph,NW,Sunny
+2025-11-16 16:00:02,Charlotte,76,F,0,13 to 16 mph,WNW,Sunny
+2025-11-16 17:00:03,Wilmington,79,F,0,9 mph,W,Sunny
+2025-11-16 17:00:09,Raleigh,75,F,0,10 to 16 mph,NW,Sunny
+2025-11-16 17:00:09,Charlotte,74,F,0,14 mph,NW,Sunny
+2025-11-16 18:00:01,Wilmington,44,F,0,7 mph,NW,Mostly Clear
+2025-11-16 18:00:16,Raleigh,75,F,0,10 to 16 mph,NW,Sunny
+2025-11-16 18:00:16,Charlotte,74,F,0,14 mph,NW,Sunny
+2025-11-16 19:00:01,Wilmington,44,F,0,7 mph,NW,Mostly Clear
+2025-11-16 19:00:08,Raleigh,38,F,0,5 to 8 mph,NW,Mostly Clear
+2025-11-16 19:00:08,Charlotte,38,F,0,3 to 12 mph,NW,Clear
+2025-11-16 20:00:05,Wilmington,44,F,0,7 mph,NW,Mostly Clear
+2025-11-16 20:00:06,Raleigh,38,F,0,7 mph,NW,Clear
+2025-11-16 20:00:07,Charlotte,38,F,0,3 to 12 mph,NW,Clear
+2025-11-16 21:00:07,Wilmington,44,F,0,7 mph,NW,Mostly Clear
+2025-11-16 21:00:46,Raleigh,38,F,0,7 mph,NW,Clear
+2025-11-16 21:00:46,Charlotte,38,F,0,3 to 12 mph,NW,Clear
+2025-11-16 22:00:07,Wilmington,46,F,0,7 mph,NW,Mostly Clear
+2025-11-16 22:00:07,Raleigh,38,F,0,7 mph,NW,Clear
+2025-11-16 22:00:07,Charlotte,38,F,0,3 to 12 mph,NW,Clear
+2025-11-16 23:00:04,Wilmington,46,F,0,7 mph,NW,Mostly Clear
+2025-11-16 23:00:05,Raleigh,38,F,0,6 mph,NW,Clear
+2025-11-16 23:00:05,Charlotte,38,F,0,3 to 12 mph,NW,Clear
+2025-11-17 15:00:04,Wilmington,64,F,0,7 mph,NW,Sunny
+2025-11-17 15:00:37,Raleigh,61,F,0,5 to 8 mph,NW,Sunny
+2025-11-17 15:00:37,Charlotte,64,F,0,2 to 6 mph,WNW,Sunny
+2025-11-17 16:00:03,Wilmington,64,F,0,6 mph,NW,Sunny
+2025-11-17 16:00:07,Raleigh,61,F,0,7 mph,NW,Sunny
+2025-11-17 16:00:07,Charlotte,64,F,0,2 to 6 mph,WNW,Sunny
+2025-11-17 17:00:03,Wilmington,64,F,0,6 mph,NW,Sunny
+2025-11-17 17:00:14,Raleigh,61,F,0,7 mph,NW,Sunny
+2025-11-17 17:00:15,Charlotte,64,F,0,2 to 6 mph,WNW,Sunny
+2025-11-17 18:00:02,Wilmington,40,F,0,2 mph,N,Mostly Clear
+2025-11-17 18:00:05,Raleigh,35,F,1,0 to 3 mph,N,Mostly Clear
+2025-11-17 18:00:05,Charlotte,67,F,0,3 mph,WNW,Sunny
+2025-11-17 19:00:02,Wilmington,40,F,0,0 to 3 mph,N,Clear
+2025-11-17 19:00:15,Raleigh,35,F,1,2 mph,N,Mostly Clear
+2025-11-17 19:00:15,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-17 20:00:05,Wilmington,40,F,0,0 to 3 mph,N,Clear
+2025-11-17 20:00:06,Raleigh,35,F,1,2 mph,N,Mostly Clear
+2025-11-17 20:00:06,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-17 21:00:08,Wilmington,40,F,0,0 to 3 mph,N,Clear
+2025-11-17 21:00:10,Raleigh,35,F,1,2 mph,N,Mostly Clear
+2025-11-17 21:00:11,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-17 22:00:06,Wilmington,40,F,0,1 mph,NE,Mostly Clear
+2025-11-17 22:00:09,Raleigh,35,F,1,0 to 3 mph,N,Mostly Clear
+2025-11-17 22:00:09,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-17 23:00:05,Wilmington,40,F,0,1 mph,NE,Mostly Clear
+2025-11-17 23:00:05,Raleigh,35,F,1,2 mph,N,Mostly Clear
+2025-11-17 23:00:06,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-18 00:00:02,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 00:00:17,Raleigh,35,F,1,0 mph,,Mostly Clear
+2025-11-18 00:00:17,Charlotte,39,F,1,1 mph,NE,Mostly Clear
+2025-11-18 01:00:06,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 01:00:08,Raleigh,37,F,0,2 mph,N,Mostly Clear
+2025-11-18 01:00:08,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 02:00:01,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 02:00:02,Raleigh,37,F,0,2 mph,N,Mostly Clear
+2025-11-18 02:00:02,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 03:00:03,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 03:00:03,Raleigh,37,F,0,2 mph,N,Mostly Clear
+2025-11-18 03:00:03,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 04:00:15,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 04:00:15,Raleigh,37,F,0,2 mph,N,Mostly Clear
+2025-11-18 04:00:15,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 05:00:01,Wilmington,40,F,0,1 mph,N,Mostly Clear
+2025-11-18 05:00:05,Raleigh,37,F,0,2 mph,N,Mostly Clear
+2025-11-18 05:00:05,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 06:00:04,Wilmington,65,F,0,1 to 6 mph,E,Sunny
+2025-11-18 06:00:07,Raleigh,64,F,0,1 to 7 mph,SE,Sunny
+2025-11-18 06:00:07,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 07:00:05,Wilmington,65,F,0,2 to 6 mph,E,Sunny
+2025-11-18 07:00:08,Raleigh,64,F,0,1 to 7 mph,SE,Sunny
+2025-11-18 07:00:08,Charlotte,39,F,0,2 mph,ENE,Mostly Clear
+2025-11-18 08:00:20,Wilmington,65,F,0,2 to 6 mph,E,Sunny
+2025-11-18 08:00:21,Raleigh,64,F,0,1 to 7 mph,SE,Sunny
+2025-11-18 08:00:21,Charlotte,67,F,0,2 to 8 mph,S,Sunny
+2025-11-18 09:00:14,Wilmington,65,F,0,6 mph,E,Sunny
+2025-11-18 09:00:15,Raleigh,64,F,0,1 to 6 mph,SE,Mostly Sunny
+2025-11-18 09:00:15,Charlotte,67,F,0,2 to 8 mph,S,Sunny
+2025-11-18 10:00:01,Wilmington,65,F,0,2 to 6 mph,E,Sunny
+2025-11-18 10:00:01,Raleigh,64,F,0,1 to 6 mph,SE,Mostly Sunny
+2025-11-18 10:00:01,Charlotte,67,F,0,3 to 8 mph,S,Sunny
+2025-11-18 11:00:03,Wilmington,65,F,0,2 to 6 mph,E,Sunny
+2025-11-18 11:00:05,Raleigh,64,F,0,1 to 6 mph,SE,Mostly Sunny
+2025-11-18 11:00:05,Charlotte,67,F,0,3 to 8 mph,S,Sunny
+2025-11-18 21:00:02,Wilmington,50,F,2,5 mph,S,Partly Cloudy
+2025-11-18 21:00:09,Raleigh,48,F,42,7 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-18 21:00:09,Charlotte,50,F,15,8 mph,SSW,Partly Cloudy then Slight Chance Rain Showers
+2025-11-18 22:00:08,Wilmington,50,F,2,5 mph,S,Partly Cloudy
+2025-11-18 22:00:18,Raleigh,48,F,42,7 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-18 22:00:18,Charlotte,50,F,15,8 mph,SSW,Partly Cloudy then Slight Chance Rain Showers
+2025-11-18 23:00:02,Wilmington,50,F,2,5 mph,S,Partly Cloudy
+2025-11-18 23:00:04,Raleigh,48,F,42,7 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-18 23:00:04,Charlotte,50,F,15,8 mph,SSW,Partly Cloudy then Slight Chance Rain Showers
+2025-11-19 00:00:16,Wilmington,50,F,2,5 mph,SW,Partly Cloudy
+2025-11-19 00:00:18,Raleigh,48,F,42,7 mph,SW,Chance Light Rain
+2025-11-19 00:00:18,Charlotte,50,F,15,8 mph,SSW,Partly Cloudy then Slight Chance Rain Showers
+2025-11-19 01:00:34,Wilmington,50,F,2,5 mph,SW,Partly Cloudy
+2025-11-19 01:00:35,Raleigh,48,F,38,5 mph,SW,Chance Rain Showers
+2025-11-19 01:00:35,Charlotte,49,F,6,8 mph,SSW,Partly Cloudy
+2025-11-19 11:00:08,Wilmington,75,F,3,3 to 8 mph,W,Mostly Sunny
+2025-11-19 11:00:08,Raleigh,71,F,4,7 mph,NW,Sunny
+2025-11-19 11:00:08,Charlotte,76,F,3,2 to 7 mph,W,Sunny
+2025-11-19 12:00:05,Wilmington,75,F,3,3 to 8 mph,W,Mostly Sunny
+2025-11-19 12:00:05,Raleigh,71,F,10,7 mph,NW,Sunny
+2025-11-19 12:00:05,Charlotte,76,F,3,2 to 7 mph,W,Sunny
+2025-11-19 13:00:05,Wilmington,75,F,3,3 to 8 mph,W,Mostly Sunny
+2025-11-19 13:00:36,Raleigh,72,F,0,5 mph,N,Sunny
+2025-11-19 13:00:37,Charlotte,76,F,2,2 to 6 mph,NW,Sunny
+2025-11-19 14:00:04,Wilmington,76,F,2,3 to 7 mph,W,Sunny
+2025-11-19 14:00:40,Raleigh,72,F,0,5 mph,N,Sunny
+2025-11-19 14:00:41,Charlotte,76,F,2,2 to 6 mph,NW,Sunny
+2025-11-19 18:00:06,Wilmington,49,F,1,2 to 6 mph,N,Partly Cloudy
+2025-11-19 18:00:06,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 18:00:07,Charlotte,76,F,2,2 to 6 mph,NW,Sunny
+2025-11-19 19:00:05,Wilmington,49,F,1,2 to 6 mph,NE,Partly Cloudy
+2025-11-19 19:00:06,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 19:00:07,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-19 20:00:07,Wilmington,49,F,1,2 to 6 mph,NE,Partly Cloudy
+2025-11-19 20:00:07,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 20:00:08,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-19 21:00:03,Wilmington,49,F,1,2 to 6 mph,NE,Partly Cloudy
+2025-11-19 21:00:04,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 21:00:04,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-19 22:00:04,Wilmington,49,F,1,7 mph,NE,Partly Cloudy
+2025-11-19 22:00:05,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 22:00:06,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-19 23:00:05,Wilmington,49,F,1,7 mph,NE,Partly Cloudy
+2025-11-19 23:00:06,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-19 23:00:06,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-20 00:00:05,Wilmington,49,F,1,7 mph,NE,Partly Cloudy
+2025-11-20 00:00:05,Raleigh,43,F,1,3 mph,NE,Partly Cloudy
+2025-11-20 00:00:05,Charlotte,51,F,2,3 mph,ENE,Mostly Cloudy
+2025-11-20 10:00:22,Wilmington,67,F,1,2 to 6 mph,E,Mostly Sunny
+2025-11-20 10:00:23,Raleigh,61,F,2,2 mph,E,Partly Sunny
+2025-11-20 10:00:24,Charlotte,70,F,2,3 mph,SE,Mostly Sunny
+2025-11-20 11:00:05,Wilmington,67,F,1,2 to 6 mph,E,Mostly Sunny
+2025-11-20 11:00:06,Raleigh,61,F,2,2 mph,E,Partly Sunny
+2025-11-20 11:00:06,Charlotte,70,F,2,3 mph,SE,Mostly Sunny
+2025-11-20 12:00:02,Wilmington,67,F,1,2 to 6 mph,E,Mostly Sunny
+2025-11-20 23:00:07,Wilmington,54,F,4,0 mph,,Mostly Cloudy
+2025-11-20 23:00:07,Raleigh,49,F,8,2 mph,S,Mostly Cloudy
+2025-11-20 23:00:07,Charlotte,55,F,36,2 mph,S,Mostly Cloudy then Chance Rain Showers
+2025-11-21 00:00:05,Wilmington,54,F,4,0 mph,,Mostly Cloudy
+2025-11-21 00:00:10,Raleigh,49,F,8,2 mph,S,Mostly Cloudy
+2025-11-21 00:00:13,Charlotte,55,F,36,2 mph,S,Mostly Cloudy then Chance Rain Showers
+2025-11-21 00:59:59,Wilmington,54,F,5,1 mph,NE,Mostly Cloudy
+2025-11-21 01:00:00,Raleigh,49,F,8,2 mph,S,Mostly Cloudy
+2025-11-21 01:00:00,Charlotte,56,F,48,2 mph,S,Slight Chance Light Rain
+2025-11-21 18:00:11,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 18:00:16,Raleigh,59,F,27,1 to 6 mph,SW,Chance Light Rain
+2025-11-21 18:00:16,Charlotte,73,F,11,6 mph,SW,Mostly Cloudy
+2025-11-21 19:00:03,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 19:00:04,Raleigh,59,F,27,1 to 6 mph,SW,Chance Light Rain
+2025-11-21 19:00:04,Charlotte,61,F,34,5 to 10 mph,SSW,Mostly Cloudy then Chance Rain Showers
+2025-11-21 20:00:03,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 20:00:04,Raleigh,59,F,27,1 to 6 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-21 20:00:04,Charlotte,61,F,34,5 to 10 mph,SSW,Mostly Cloudy then Chance Rain Showers
+2025-11-21 21:00:13,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 21:00:14,Raleigh,59,F,27,1 to 6 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-21 21:00:16,Charlotte,61,F,34,5 to 10 mph,SSW,Mostly Cloudy then Chance Rain Showers
+2025-11-21 22:00:22,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 22:00:25,Raleigh,59,F,27,1 to 6 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-21 22:00:25,Charlotte,61,F,34,5 to 10 mph,SSW,Mostly Cloudy then Chance Rain Showers
+2025-11-21 23:00:02,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-21 23:00:24,Raleigh,59,F,27,1 to 6 mph,SW,Chance Light Rain
+2025-11-21 23:00:24,Charlotte,61,F,34,7 to 10 mph,SW,Mostly Cloudy then Chance Rain Showers
+2025-11-22 00:00:02,Wilmington,60,F,10,2 to 6 mph,SW,Partly Cloudy
+2025-11-22 00:00:03,Raleigh,59,F,27,1 to 6 mph,SW,Mostly Cloudy then Chance Light Rain
+2025-11-22 00:00:03,Charlotte,61,F,34,7 to 10 mph,SW,Mostly Cloudy then Chance Rain Showers
+2025-11-22 15:00:02,Wilmington,78,F,12,5 to 9 mph,W,Sunny
+2025-11-22 15:00:04,Raleigh,76,F,24,6 mph,NW,Slight Chance Showers And Thunderstorms
+2025-11-22 15:00:04,Charlotte,78,F,7,6 to 10 mph,W,Mostly Sunny
+2025-11-22 16:00:03,Wilmington,78,F,12,5 to 8 mph,W,Sunny
+2025-11-22 16:00:04,Raleigh,76,F,20,5 mph,NW,Slight Chance Rain Showers
+2025-11-22 16:00:04,Charlotte,78,F,7,6 to 10 mph,W,Mostly Sunny
+2025-11-22 17:00:08,Wilmington,78,F,12,5 to 8 mph,W,Sunny
+2025-11-22 17:00:11,Raleigh,76,F,20,5 mph,NW,Slight Chance Rain Showers
+2025-11-22 17:00:11,Charlotte,78,F,7,6 to 10 mph,W,Mostly Sunny
+2025-11-22 18:00:21,Wilmington,55,F,26,1 to 5 mph,NW,Chance Rain Showers
+2025-11-22 18:00:23,Raleigh,50,F,16,6 mph,N,Slight Chance Rain Showers
+2025-11-22 18:00:25,Charlotte,52,F,16,3 mph,N,Slight Chance Showers And Thunderstorms then Partly Cloudy
+2025-11-22 19:00:08,Wilmington,55,F,29,5 mph,NW,Slight Chance Showers And Thunderstorms then Chance Showers And Thunderstorms
+2025-11-22 19:00:09,Raleigh,50,F,16,3 to 8 mph,NE,Slight Chance Rain Showers
+2025-11-22 19:00:09,Charlotte,52,F,16,3 mph,N,Slight Chance Showers And Thunderstorms then Partly Cloudy
+2025-11-22 20:00:14,Wilmington,55,F,29,5 mph,NW,Slight Chance Showers And Thunderstorms then Chance Showers And Thunderstorms
+2025-11-22 20:00:28,Raleigh,50,F,16,5 to 8 mph,NE,Slight Chance Rain Showers
+2025-11-22 20:00:28,Charlotte,52,F,16,3 mph,N,Slight Chance Showers And Thunderstorms then Partly Cloudy
+2025-11-22 21:00:04,Wilmington,55,F,29,5 mph,NW,Chance Showers And Thunderstorms
+2025-11-22 21:00:04,Raleigh,50,F,16,5 to 8 mph,NE,Slight Chance Rain Showers
+2025-11-22 21:00:04,Charlotte,52,F,16,3 mph,N,Slight Chance Showers And Thunderstorms then Partly Cloudy
+2025-11-22 22:00:26,Wilmington,55,F,29,5 mph,NW,Chance Showers And Thunderstorms
+2025-11-22 22:00:34,Raleigh,50,F,16,5 to 8 mph,NE,Slight Chance Rain Showers
+2025-11-22 22:00:34,Charlotte,52,F,16,3 mph,N,Slight Chance Showers And Thunderstorms then Partly Cloudy
+2025-11-22 23:00:01,Wilmington,55,F,29,5 mph,N,Chance Rain Showers
+2025-11-22 23:00:02,Raleigh,49,F,10,3 to 7 mph,NE,Mostly Cloudy
+2025-11-22 23:00:02,Charlotte,78,F,17,6 mph,WNW,Slight Chance Rain Showers
+2025-11-23 01:00:02,Wilmington,54,F,76,6 mph,NE,Rain Showers
+2025-11-23 01:00:06,Raleigh,49,F,7,3 to 7 mph,NE,Mostly Cloudy
+2025-11-23 01:00:06,Charlotte,50,F,1,3 mph,NNE,Partly Cloudy
+2025-11-23 02:00:05,Wilmington,54,F,76,6 mph,NE,Rain Showers
+2025-11-23 02:00:20,Raleigh,49,F,7,6 mph,NE,Mostly Cloudy
+2025-11-23 02:00:20,Charlotte,50,F,1,3 mph,NNE,Partly Cloudy
+2025-11-23 03:00:02,Wilmington,54,F,76,6 mph,NE,Rain Showers
+2025-11-23 03:00:02,Raleigh,49,F,7,6 mph,NE,Mostly Cloudy
+2025-11-23 03:00:05,Charlotte,50,F,1,3 mph,NNE,Partly Cloudy
+2025-11-23 13:00:03,Wilmington,69,F,0,6 mph,N,Sunny
+2025-11-23 13:00:05,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 13:00:05,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-23 14:00:07,Wilmington,69,F,0,6 mph,N,Sunny
+2025-11-23 14:00:09,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 14:00:09,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-23 15:00:21,Wilmington,69,F,0,6 mph,N,Sunny
+2025-11-23 15:00:23,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 15:00:23,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-23 16:00:03,Wilmington,69,F,0,5 mph,N,Sunny
+2025-11-23 16:00:04,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 16:00:04,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-23 17:00:03,Wilmington,69,F,0,5 mph,N,Sunny
+2025-11-23 17:00:04,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 17:00:04,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-23 18:00:04,Wilmington,46,F,0,0 to 5 mph,N,Clear
+2025-11-23 18:00:04,Raleigh,66,F,0,6 mph,NW,Sunny
+2025-11-23 18:00:04,Charlotte,69,F,0,6 mph,NW,Sunny
+2025-11-24 12:00:02,Wilmington,67,F,0,7 mph,E,Sunny
+2025-11-24 12:00:04,Raleigh,64,F,0,5 mph,E,Sunny
+2025-11-24 12:00:04,Charlotte,44,F,0,2 mph,NE,Mostly Clear
+2025-11-24 13:00:06,Wilmington,67,F,0,7 mph,E,Sunny
+2025-11-24 13:00:09,Raleigh,65,F,0,5 mph,E,Sunny
+2025-11-24 13:00:09,Charlotte,67,F,0,5 mph,ESE,Mostly Sunny
+2025-11-24 14:00:05,Wilmington,67,F,0,7 mph,E,Sunny
+2025-11-24 14:00:05,Raleigh,65,F,0,5 mph,E,Sunny
+2025-11-24 14:00:05,Charlotte,67,F,0,5 mph,ESE,Mostly Sunny
+2025-11-24 15:00:19,Wilmington,67,F,0,7 mph,E,Sunny
+2025-11-24 15:00:19,Raleigh,65,F,0,5 mph,E,Sunny
+2025-11-24 15:00:19,Charlotte,67,F,0,5 mph,ESE,Mostly Sunny
+2025-11-24 16:00:00,Wilmington,67,F,0,7 mph,E,Sunny
+2025-11-24 16:00:06,Raleigh,65,F,0,5 mph,E,Sunny
+2025-11-24 16:00:06,Charlotte,67,F,0,5 mph,ESE,Mostly Sunny
+2025-11-24 19:00:02,Wilmington,52,F,7,5 mph,E,Partly Cloudy
+2025-11-24 19:00:06,Raleigh,44,F,0,2 mph,SE,Mostly Cloudy
+2025-11-24 19:00:06,Charlotte,49,F,8,1 to 5 mph,SE,Mostly Cloudy
+2025-11-24 20:00:07,Wilmington,52,F,7,5 mph,E,Partly Cloudy
+2025-11-24 20:00:11,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-24 20:00:12,Charlotte,67,F,0,3 mph,SE,Partly Sunny
+2025-11-24 21:00:03,Wilmington,52,F,7,3 mph,E,Partly Cloudy
+2025-11-24 21:00:09,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-24 21:00:12,Charlotte,67,F,0,3 mph,SE,Partly Sunny
+2025-11-24 22:00:02,Wilmington,52,F,7,3 mph,E,Partly Cloudy
+2025-11-24 22:00:03,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-24 22:00:03,Charlotte,67,F,0,3 mph,SE,Partly Sunny
+2025-11-24 23:00:03,Wilmington,52,F,7,3 mph,E,Partly Cloudy
+2025-11-24 23:00:04,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-24 23:00:04,Charlotte,67,F,0,3 mph,SE,Partly Sunny
+2025-11-25 00:00:07,Wilmington,52,F,7,2 mph,E,Partly Cloudy
+2025-11-25 00:00:08,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-25 00:00:08,Charlotte,67,F,0,3 mph,SE,Partly Sunny
+2025-11-25 01:00:03,Wilmington,51,F,2,3 mph,NE,Partly Cloudy
+2025-11-25 01:00:02,Raleigh,44,F,0,2 mph,SE,Partly Cloudy
+2025-11-25 01:00:02,Charlotte,50,F,1,3 mph,ESE,Mostly Cloudy
+2025-12-01 12:00:12,Wilmington,54,F,4,12 mph,NE,Partly Sunny
+2025-12-01 12:00:14,Raleigh,47,F,0,5 to 9 mph,NE,Mostly Sunny
+2025-12-01 12:00:14,Charlotte,48,F,4,5 to 10 mph,NE,Partly Sunny
+2025-12-01 13:00:11,Wilmington,54,F,0,7 to 10 mph,NE,Partly Sunny
+2025-12-01 13:00:11,Raleigh,46,F,0,6 to 9 mph,NE,Partly Sunny
+2025-12-01 13:00:11,Charlotte,47,F,0,5 to 9 mph,ENE,Partly Sunny
