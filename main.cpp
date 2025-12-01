@@ -207,12 +207,12 @@ int main () {
                     cout << "\nComparison of Averages:\n";
                     cout << "+--------------------------+----------------------+----------------------+\n";
                     cout << "|         Metric           |     " << A.location
-                         << "        |     " << B.location << "        |\n";
+                         << "        |     " << B.location << "       |\n";
                     cout << "+--------------------------+----------------------+----------------------+\n";
                     cout << "| Average Temp (F)         |      " << A.avgTemp
-                         << "          |      " << B.avgTemp << "          |\n";
+                         << "          |      " << B.avgTemp << "        |\n";
                     cout << "| Average Precip (%)       |      " << A.avgPrecip
-                         << "          |      " << B.avgPrecip << "          |\n";
+                         << "          |      " << B.avgPrecip << "        |\n";
                     cout << "+--------------------------+----------------------+----------------------+\n";
                     //put it in percentage form how much hotter city A is from city B
                     double tempDiff = A.avgTemp - B.avgTemp;
