@@ -150,7 +150,7 @@ int main () {
                     cout << "+----------------------+------------------------------+\n";
                     cout << "|      " << result.avgTemp
                          << "         |           " << result.avgPrecip
-                         << "          |\n";
+                         << "            |\n";
                     cout << "+----------------------+------------------------------+\n";
                     cout << "\nWould you like to average another location? y/n\n";
                     cont_check = inputHandler.should_continue();
