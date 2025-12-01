@@ -149,8 +149,8 @@ int main () {
                     cout << "|   Average Temp (F)   |  Average Precip Prob (%)     |\n";
                     cout << "+----------------------+------------------------------+\n";
                     cout << "|      " << result.avgTemp
-                         << "           |           " << result.avgPrecip
-                         << "                |\n";
+                         << "         |           " << result.avgPrecip
+                         << "          |\n";
                     cout << "+----------------------+------------------------------+\n";
                     cout << "\nWould you like to average another location? y/n\n";
                     cont_check = inputHandler.should_continue();
