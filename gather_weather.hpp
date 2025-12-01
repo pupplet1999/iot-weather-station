@@ -313,57 +313,5 @@ public:
         return usr_input;
     }
 };
-/* commenting all this out until i get it to work!
-int main() { 
-    WeatherDataCSV weatherCSV("weather_log.csv");
-    DisplayWeatherCSV display(weatherCSV);
-    WeatherInputHandler inputHandler;
 
-    bool cont_check = true;
-    while (cont_check){
-        cout << "Choose a location: \n[1] Charlotte\n[2] Raleigh\n[3] Wilmington" << "\n";
-        string chosen_loc;
-        cin >> chosen_loc;
-
-        // check if valid input, only update if valid
-        string loc_result;
-        do {
-            loc_result = inputHandler.chooseLocation(chosen_loc);
-            if (loc_result == "") {
-                cout << "Invalid location, try again:" << endl;
-                cin >> chosen_loc;
-            }
-        } while (loc_result == "");
-
-        cout << "Enter date for " << loc_result << " (yyyy-mm-dd):" << "\n";
-        string chosen_date;
-        cin >> chosen_date;
-        while (!inputHandler.chooseDate(chosen_date)){   // update key with date
-            cout << "Invalid date, try again (yyyy-mm-dd):" << "\n";
-            cin >> chosen_date;
-        }                  
-
-        cout << "Enter hour number for " << loc_result << " on " << chosen_date <<  " (hh, 24h):" << "\n";
-        string chosen_time;
-        cin >> chosen_time;
-        inputHandler.chooseTime(chosen_time);            // update key with time
-    
-        string usr_input = inputHandler.getUserKey();    // get fully constructed key
-
-        map<string, int> lineMap = weatherCSV.get_map(); // gather map
-    
-        if (lineMap.find(usr_input) != lineMap.end()){   // check if constructed key exists within map
-            cout << "\n==========================\n";
-            display.display_info(usr_input);             // output weather
-            cout << "==========================\n\n";
-        }else{
-            cout << "Could not find weather for " << loc_result << " on " << chosen_date << " at hour " << chosen_time << ".\n";
-        }
-        usr_input = inputHandler.clear_input();
-
-        cout << "Would you like to search again? y/n" << "\n";
-        cont_check = inputHandler.should_continue();
-    }
-}
-*/
 #endif //end lol
