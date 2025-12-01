@@ -1,5 +1,6 @@
 #include "api_pull.hpp" // pulls weather from api, stores it into CSV
 #include "gather_weather.hpp" //added gather weather lol
+#include <iomanip>
 
 // menu funtion
 int menu(){
@@ -204,16 +205,30 @@ int main () {
                     avgResult A = computeAverages(weatherCSV, loc1_result);
                     avgResult B = computeAverages(weatherCSV, loc2_result);
 
+                    const int col1 = 26;
+                    const int col = 22;
+                    
                     cout << "\nComparison of Averages:\n";
-                    cout << "+--------------------------+----------------------+----------------------+\n";
-                    cout << "|         Metric           |     " << A.location
-                         << "        |     " << B.location << "       |\n";
-                    cout << "+--------------------------+----------------------+----------------------+\n";
-                    cout << "| Average Temp (F)         |      " << A.avgTemp
-                         << "          |      " << B.avgTemp << "        |\n";
-                    cout << "| Average Precip (%)       |      " << A.avgPrecip
-                         << "          |      " << B.avgPrecip << "        |\n";
-                    cout << "+--------------------------+----------------------+----------------------+\n";
+                    cout << "+" << string(col1,'-') << "+" << string(col,'-') << "+" << string(col,'-') << "+\n";
+                    
+                    cout << "|" << left  << setw(col1) << " Metric"
+                         << "|" << left  << setw(col)  << (" " + A.location)
+                         << "|" << left  << setw(col)  << (" " + B.location)
+                         << "|\n";
+                    
+                    cout << "+" << string(col1,'-') << "+" << string(col,'-') << "+" << string(col,'-') << "+\n";
+                    
+                    cout << "|" << left << setw(col1) << " Average Temp (F)"
+                         << "|" << right << setw(col) << A.avgTemp
+                         << "|" << right << setw(col) << B.avgTemp
+                         << "|\n";
+                    
+                    cout << "|" << left << setw(col1) << " Average Precip (%)"
+                         << "|" << right << setw(col) << A.avgPrecip
+                         << "|" << right << setw(col) << B.avgPrecip
+                         << "|\n";
+                    
+                    cout << "+" << string(col1,'-') << "+" << string(col,'-') << "+" << string(col,'-') << "+\n";
                     //put it in percentage form how much hotter city A is from city B
                     double tempDiff = A.avgTemp - B.avgTemp;
                     double tempDiffWithPerc = (tempDiff / B.avgTemp) * 100.0;
