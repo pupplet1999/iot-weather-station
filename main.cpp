@@ -145,7 +145,7 @@ int main () {
                     // get the average for the city and print a table
                     avgResult result = computeAverages(weatherCSV, loc_result);
                     
-                    cout << fixed << setprecision(2) // set precision to be 2 decimal places
+                    cout << fixed << setprecision(2); // set precision to be 2 decimal places
 
                     cout << "\nAverages for " << result.location << ":\n";
                     cout << "+----------------------+------------------------------+\n";
@@ -210,7 +210,7 @@ int main () {
                     const int col1 = 26;
                     const int col = 22;
                     
-                    cout << fixed << setprecision(2) // set precision to be 2 decimal places
+                    cout << fixed << setprecision(2); // set precision to be 2 decimal places
                         
                     cout << "\nComparison of Averages:\n";
                     cout << "+" << string(col1,'-') << "+" << string(col,'-') << "+" << string(col,'-') << "+\n";
