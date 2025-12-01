@@ -1,3 +1,0 @@
-/mnt/c/Users/holde/iot-weather-station/build/CMakeFiles/main.dir
-/mnt/c/Users/holde/iot-weather-station/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/holde/iot-weather-station/build/CMakeFiles/rebuild_cache.dir
