@@ -133,6 +133,8 @@ public:
             anomalie = "low";
         } else if (record.temp >= 90) {
             anomalie = "high";
+        }else {
+            anomalie = "none";
         }
 
         // gather temperature unit (F or C)
@@ -216,6 +218,9 @@ public:
         } else if (data.getanomalie() == "high") {
             cout << "\n[WARNING]\nDANGEROUSLY HIGH TEMPERATURE\n";
             cout << "==========================\n\n";
+        }else if (data.getanomalie() == "none") {
+            cout << "==========================\n\n";
+            return;
         }
         return;
     }
@@ -232,13 +237,13 @@ public:
 
         // take user's choice and add properly formatted location to key, return formatted location
         if (chosen_loc == "1" || chosen_loc == "charlotte") {
-            usr_input += "Charlotte";
+            usr_input = "Charlotte";
             return "Charlotte";
         } else if (chosen_loc == "2" || chosen_loc == "raleigh") {
-            usr_input += "Raleigh";
+            usr_input = "Raleigh";
             return "Raleigh";
         } else if (chosen_loc == "3" || chosen_loc == "wilmington") {
-            usr_input += "Wilmington";
+            usr_input = "Wilmington";
             return "Wilmington";
         } else if (chosen_loc == "4") {
             return "quit";

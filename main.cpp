@@ -100,7 +100,6 @@ int main () {
                     } 
                 
                     string usr_input = inputHandler.getUserKey();    // get fully constructed key
-                    cout << "DEBUG USER KEY = [" << usr_input << "]\n";
                     map<string, int> lineMap = weatherCSV.get_map(); // gather map
                 
                     if (lineMap.find(usr_input) != lineMap.end()){   // check if constructed key exists within map
@@ -145,23 +144,31 @@ int main () {
                     // get the average for the city and print a table
                     avgResult result = computeAverages(weatherCSV, loc_result);
                     
-                    cout << fixed << setprecision(2); // set precision to be 2 decimal places
+                    cout << fixed << setprecision(2); // all numbers now have 2 decimals
+
+                    const int col = 26; // column width for numbers
+                    const int colLabel = 22; // column width for labels
 
                     cout << "\nAverages for " << result.location << ":\n";
-                    cout << "+----------------------+------------------------------+\n";
-                    cout << "|   Average Temp (F)   |  Average Precip Prob (%)     |\n";
-                    cout << "+----------------------+------------------------------+\n";
-                    cout << "|      " << result.avgTemp
-                         << "         |           " << result.avgPrecip
-                         << "            |\n";
-                    cout << "+----------------------+------------------------------+\n";
+                    cout << "+" << string(colLabel,'-')   << "+" << string(col,'-') << "+\n";
+                    cout << "|" << left << setw(colLabel) << " Average Temp (F)"
+                         << "|" << left << setw(col)      << " Average Precip Prob (%)"
+                         << "|\n";
+                    cout << "+" << string(colLabel,'-') << "+" << string(col,'-') << "+\n";
+
+                    // print numbers, aligned right for a clean table
+                    cout << "|" << left << setw(colLabel) << result.avgTemp
+                         << "|" << left << setw(col)      << result.avgPrecip
+                         << "|\n";
+
+                    cout << "+" << string(colLabel,'-') << "+" << string(col,'-') << "+\n";
                     cout << "\nWould you like to average another location? y/n\n";
                     cont_check = inputHandler.should_continue();
                 }
 
                 break;
             }
-            case 4:{
+            case 4: {
                 bool cont_check = true;
                 while (cont_check) {
                     cout << "\nChoose TWO locations to compare:\n"
@@ -228,7 +235,7 @@ int main () {
                          << "|\n";
                     
                     cout << "|" << left << setw(col1) << " Average Precip (%)"
-                         << "|" << left << setw(col) << A.avgPrecip; 
+                         << "|" << left << setw(col) << A.avgPrecip 
                          << "|" << left << setw(col) << B.avgPrecip
                          << "|\n";
                     
