@@ -69,17 +69,25 @@ private:
             // gather timestamp
             int comma_loc = line.find(','); // find comma within line
             string full_ts = line.substr(0, comma_loc); // gather full timestamp -> yyyy-mm-dd hh:mm:ss
-            string ts = line.substr(0, full_ts.find(':')); // cutt off minutes and seconds in timestamp -> yyyy-mm-dd hh
+
+            // split "2025-11-02 10:35:00" into date + hour
+            int space_loc = full_ts.find(' ');
+            string date = full_ts.substr(0, space_loc);        // "2025-11-02"
+            string hour = full_ts.substr(space_loc + 1, 2);    // "10"
+            string ts = date + " " + hour;                     // "2025-11-02 10"
             line = line.substr(comma_loc + 1); // start line at comma
 
             // gather location
             comma_loc = line.find(',');
             string location;
             location = line.substr(0, comma_loc);
+            //get rid of an evil space that can sometimes sneak its way on the outskirts of the location
+            location.erase(0, location.find_first_not_of(" "));      // trim left
+            location.erase(location.find_last_not_of(" ") + 1);      // trim right
 
             line = line.substr(comma_loc + 1);
 
-            lineMap[location + ' ' + ts] = line_num; // update map with <location> <yyyy-mm-dd> <hh:mm> -> line_num
+            lineMap[location + " " + ts] = line_num; // update map with <location> <yyyy-mm-dd> <hh:mm> -> line_num
             line_num++;
         }
         csv_file.clear(); // clear EOF and fail flags
@@ -97,14 +105,6 @@ public:
     // constructor takes name of CSV file, opens CSV file, creates map
     WeatherDataCSV(const string& filename) : CSVFile(filename) { 
         createTimeMap(csv_name); // create timestamp map
-        // ==========REMOVE==========
-        cout << "\nDEBUG: Dumping map:\n";
-        for (const auto& p : lineMap) {
-            if (p.second == 1) {continue;}
-            cout << p.first << " -> " << p.second << "\n";
-            }
-        cout << "END MAP\n\n";
-        // ==========================
     }
 
     string getanomalie() { 
@@ -157,6 +157,41 @@ public:
         return lineMap;
     }
 };
+//create an average calcualtor function so main code isnt so messy.
+struct avgResult {
+    string location;
+    double avgTemp;
+    double avgPrecip;
+};
+avgResult computeAverages(WeatherDataCSV& csv,const string& locationName) {
+    avgResult result;
+
+    //get a map for each date
+    const map<string, int>& lineMap = csv.get_map();
+    vector<WeatherRecord> records;
+
+    // gather all rows for the selected city
+    for (const auto& p : lineMap) {
+        string keyLocation = p.first.substr(0, p.first.find(' '));
+        if (keyLocation == locationName) { //if row = city name -> collect data intro records
+            WeatherRecord rec = csv.gatherLineData(p.second);
+            records.push_back(rec);
+        }
+    }
+
+    double tempSum = 0;
+    double precipSum = 0;
+
+    for (const auto& r : records) {
+        tempSum += r.temp;
+        precipSum += r.precip;
+    }
+    result.location = locationName;
+    result.avgTemp = tempSum / records.size();
+    result.avgPrecip = precipSum / records.size();
+
+    return result;
+}
 
 class DisplayWeatherCSV{
 private:

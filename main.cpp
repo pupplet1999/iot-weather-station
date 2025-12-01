@@ -26,19 +26,18 @@ int menu(){
     return selection;
 }
 
-int main (){
+int main () {
     //creating weather station objects
     WeatherStation ILM("Wilmington", "https://api.weather.gov/gridpoints/ILM/92,68/forecast");
     WeatherStation RDU("Raleigh", "https://api.weather.gov/gridpoints/RAH/74,57/forecast");
     WeatherStation CLT("Charlotte", "https://api.weather.gov/gridpoints/GSP/119,65/forecast");
-
-    //making weather data structs first
-    WeatherData data1 = ILM.fetchCurrentForecast();
-    WeatherData data2 = RDU.fetchCurrentForecast();
-    WeatherData data3 = CLT.fetchCurrentForecast();
-
+    //initialize weather data structs
+    weatherRecord data1;
+    weatherRecord data2;
+    weatherRecord data3;
     //objects for gather_weather (case 2)
-    WeatherDataCSV weatherCSV("weather_log.csv");
+    WeatherDataCSV weatherCSV(CSV_PATH); //only if you use clion, otherwise the commented out line under this works
+    //WeatherDataCSV weatherCSV("weather_log.csv");
     DisplayWeatherCSV display(weatherCSV);
     WeatherInputHandler inputHandler;
 
@@ -47,10 +46,13 @@ int main (){
     int selection = menu(); // call menu and store user selection
 
     while (selection != 5) { // repeat until quit (selection == 5)
-        switch(selection){
-
-            case 1://this pulls data into from the api into the csv file    
-                
+        switch(selection) {
+            case 1: {
+                //this pulls data into from the api into the csv file
+                //make the weather data structs
+                data1 = ILM.fetchCurrentForecast();
+                data2 = RDU.fetchCurrentForecast();
+                data3 = CLT.fetchCurrentForecast();
                 //logging the data for each
                 ILM.logCurrentForecast(data1);
                 RDU.logCurrentForecast(data2); 
@@ -58,8 +60,9 @@ int main (){
 
                 cout << "\nCurrent weather stored for Charlotte, Raleigh, and Wilmington.\n";
                 break;
-
-            case 2: // copy pasted from gather_weather main so it does case 2 in the switch owo
+            }
+            case 2: {
+                // copy pasted from gather_weather main so it does case 2 in the switch owo
 
                 bool cont_check = true;
                 while (cont_check){
@@ -96,7 +99,7 @@ int main (){
                     } 
                 
                     string usr_input = inputHandler.getUserKey();    // get fully constructed key
-
+                    cout << "DEBUG USER KEY = [" << usr_input << "]\n";
                     map<string, int> lineMap = weatherCSV.get_map(); // gather map
                 
                     if (lineMap.find(usr_input) != lineMap.end()){   // check if constructed key exists within map
@@ -110,18 +113,126 @@ int main (){
                     cont_check = inputHandler.should_continue();
                 }
                 break;
+            }
+            case 3: {
+                bool cont_check = true;
 
-                /*case 3:
-                    cout << "avging function" << endl; // remove
-                    //code to run average function...
+                while (cont_check) {
+
+                    cout << "\nChoose a location to average: \n"
+                            "[1] Charlotte\n"
+                            "[2] Raleigh\n"
+                            "[3] Wilmington\n"
+                            "[4] Quit\n";
+
+                    string chosen_loc;
+                    cin >> chosen_loc;
+
+                    // validate location using the inputHandler
+                    string loc_result;
+                    do {
+                        loc_result = inputHandler.chooseLocation(chosen_loc);
+                        if (loc_result == "") {
+                            cout << "\nInvalid location, try again:\n";
+                            cin >> chosen_loc;
+                        }
+                    } while (loc_result == "");
+
+                    if (loc_result == "quit")
+                        break;
+
+                    // get the average for the city and print a table
+                    avgResult result = computeAverages(weatherCSV, loc_result);
+
+                    cout << "\nAverages for " << result.location << ":\n";
+                    cout << "+----------------------+------------------------------+\n";
+                    cout << "|   Average Temp (F)   |  Average Precip Prob (%)     |\n";
+                    cout << "+----------------------+------------------------------+\n";
+                    cout << "|      " << result.avgTemp
+                         << "           |           " << result.avgPrecip
+                         << "                |\n";
+                    cout << "+----------------------+------------------------------+\n";
+                    cout << "\nWould you like to average another location? y/n\n";
+                    cont_check = inputHandler.should_continue();
+                }
+
+                break;
+            }
+            case 4:{
+                bool cont_check = true;
+                while (cont_check) {
+                    cout << "\nChoose TWO locations to compare:\n"
+                    "[1] Charlotte\n"
+                    "[2] Raleigh\n"
+                    "[3] Wilmington\n"
+                    "[4] Quit\n";
+
+                    string loc1, loc2;
+                    //make sure first location is valid
+                    cout << "\nSelect first location (or quit): ";
+                    cin >> loc1;
+
+                    string loc1_result;
+                    do {
+                        loc1_result = inputHandler.chooseLocation(loc1);
+                        if (loc1_result == "") {
+                            cout << "\nInvalid location, try again:\n";
+                            cin >> loc1;
+                        }
+                    } while (loc1_result == "");
+
+                    if (loc1_result == "quit") break;
+
+                    inputHandler.clear_input(); //reset the input handler
+                    // make sure second location is valid
+                    cout << "\nSelect second location (or quit): ";
+                    cin >> loc2;
+
+                    string loc2_result;
+                    do {
+                        loc2_result = inputHandler.chooseLocation(loc2);
+                        if (loc2_result == "") {
+                            cout << "\nInvalid location, try again:\n";
+                            cin >> loc2;
+                        }
+                    } while (loc2_result == "");
+
+                    if (loc2_result == "quit") break;
+
+                    inputHandler.clear_input(); // reset input handler again
+                    // get averages from each city and display them together.
+                    avgResult A = computeAverages(weatherCSV, loc1_result);
+                    avgResult B = computeAverages(weatherCSV, loc2_result);
+
+                    cout << "\nComparison of Averages:\n";
+                    cout << "+--------------------------+----------------------+----------------------+\n";
+                    cout << "|         Metric           |     " << A.location
+                         << "        |     " << B.location << "        |\n";
+                    cout << "+--------------------------+----------------------+----------------------+\n";
+                    cout << "| Average Temp (F)         |      " << A.avgTemp
+                         << "          |      " << B.avgTemp << "          |\n";
+                    cout << "| Average Precip (%)       |      " << A.avgPrecip
+                         << "          |      " << B.avgPrecip << "          |\n";
+                    cout << "+--------------------------+----------------------+----------------------+\n";
+                    //put it in percentage form how much hotter city A is from city B
+                    double tempDiff = A.avgTemp - B.avgTemp;
+                    double tempDiffWithPerc = (tempDiff / B.avgTemp) * 100.0;
+                    if (tempDiff > 0) {
+                        cout << "\nOn average, " << A.location
+                             << " is " << tempDiff << "°F (" << tempDiffWithPerc
+                             << "%) warmer than " << B.location << ".\n";
+                    } else if (tempDiff < 0) {
+                        cout << "\nOn average, " << B.location
+                             << " is " << tempDiff << "°F (" << tempDiffWithPerc
+                             << "%) warmer than " << A.location << ".\n";
+                    } else
+                        cout << "\nBoth locations have the exact same average temperature.\n";
+                }
                     break;
-
-                case 4:
-                    cout << "comparison function" << endl; // remove
-                    //code to run comparison function...
-                    break;*/
+            }
         }
-        selection = menu(); // prompt user for input again
-    }
-    return 0;
+                selection = menu(); // prompt user for input again
+        }
+        return 0;
+
 }
