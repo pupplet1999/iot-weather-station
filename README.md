@@ -44,9 +44,9 @@ The data should be generated for different global locations to simulate diversit
 - [x] Organize data and store it
 - [x] Data retrieval from CSV based on criteria
 - [x] UML Diagram
-- [ ] Data analysis (report averages, anomolies, compare data between locations, etc)
+- [x] Data analysis (report averages, anomolies, compare data between locations, etc)
 - [x] Generate automated responses to data (warnings for high or low temperatures
-- [ ] Create main function that holds a menu that displays something like  `[1] Collect from API [2] Search for weather [3] Average weather from location [4] Compare locations`
+- [x] Create main function that holds a menu that displays something like  `[1] Collect from API [2] Search for weather [3] Average weather from location [4] Compare locations`
 - [x] Create presentation
 
 Here is presentation link: https://uncw4-my.sharepoint.com/:p:/g/personal/jrp7449_uncw_edu/EV3yZKoDVilKqcdG1WO5ntgBZadvaNzALpHinQdj7AS0DA?e=SR5YeN
